@@ -10,12 +10,20 @@
 </head>
 <body>
     <div class="w-full h-full bg-zinc-900 p-10 text-white ">
+        <div class="nav mb-10">
+            <a href="/read" class="text-blue-200">Read Users</a>
+        </div>
+
         <h1 class="text-3xl mb-5 tracking-lighter">Create User</h1>
-        <form action="POST">
+
+        <form action="/create" method="post">
             <input type="text" placeholder="Name" name="name" class=" mx-5 m px-5 py-3 bg-transparent border border-zinc-600">
+
             <input type="email" placeholder="Email" name="email" class=" mx-5 m px-5 py-3 bg-transparent border border-zinc-600">
-            <input type="text" placeholder="Image URL" name="imageurl" class=" mx-5 m px-5 py-3 bg-transparent border border-zinc-600">
-            <input type="submit" class=" px-5 py-3 bg-blue-500 rounded rounded-lg" value="Create User">
+
+            <input type="text" placeholder="Image URL" name="image" class=" mx-5 m px-5 py-3 bg-transparent border border-zinc-600">
+
+            <input type="submit" class=" px-5 py-3 bg-blue-500 rounded rounded-lg cursor-pointer" value="Create User">
         </form>
     </div>  
 </body>
